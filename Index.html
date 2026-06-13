@@ -1,1 +1,685 @@
-
+<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Jane's Recipe Collection</title><style>:root{--bg:#fffaf3;--card:#fff;--ink:#241f1a;--muted:#6d6258;--accent:#2f6f4e;--line:#eadfce}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;line-height:1.55}main{max-width:820px;margin:0 auto;padding:24px 18px 48px}h1{font-size:30px;letter-spacing:-.03em;margin:0 0 8px}h2{font-size:24px;margin:24px 0 6px}h3{font-size:19px;margin:22px 0 8px}h4{font-size:16px;color:var(--accent);margin:16px 0 6px}a{color:var(--accent);font-weight:700}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 2px 12px rgba(36,31,26,.05)}.recipe-link{display:block;width:100%;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin:12px 0;text-decoration:none;font-size:18px;box-shadow:0 2px 10px rgba(36,31,26,.04);color:var(--accent);font-weight:700;text-align:left;cursor:pointer}.sub{color:var(--muted)}.back{display:inline-block;margin:18px 0 8px;background:none;border:0;color:var(--accent);font-weight:700;font-size:16px;padding:0;cursor:pointer}.recipe{display:none;border-top:1px solid var(--line);margin-top:18px;padding-top:6px}.recipe.active{display:block}.index.hidden{display:none}li{margin:5px 0}</style></head><body><main><div class='card'><h1>My Recipe Collection</h1><section class='index'><p class='sub'>Tap a recipe name to open the copied recipe below.</p><button class="recipe-link" type="button" onclick="showRecipe('crispy-rice-sushi-tuna-salad')">Crispy Rice Sushi Tuna Salad</button>
+<button class="recipe-link" type="button" onclick="showRecipe('green-beans-cottage-cheese-pretzel-herb-crunch')">Green Beans with Cottage Cheese and Pretzel-Herb Crunch</button>
+<button class="recipe-link" type="button" onclick="showRecipe('creamy-mushroom-bacon-tagliatelle-alfredo')">Creamy Mushroom &amp; Bacon Tagliatelle Alfredo</button>
+<button class="recipe-link" type="button" onclick="showRecipe('weeknight-cream-of-mushroom-chicken-skillet')">Weeknight Cream of Mushroom Chicken Skillet</button>
+<button class="recipe-link" type="button" onclick="showRecipe('tortang-talong-filipino-eggplant-omelette')">Tortang Talong — Filipino Eggplant Omelette</button>
+<button class="recipe-link" type="button" onclick="showRecipe('creamy-roasted-eggplant-and-tomato-pasta')">Creamy Roasted Eggplant and Tomato Pasta</button>
+<button class="recipe-link" type="button" onclick="showRecipe('marry-me-chicken-and-rice-dump-bake')">Marry Me Chicken and Rice {Dump &amp; Bake}</button>
+<button class="recipe-link" type="button" onclick="showRecipe('cottage-cheese-scrambled-eggs-with-spinach-and-tomatoes')">Cottage Cheese Scrambled Eggs with Spinach and Tomatoes</button>
+<button class="recipe-link" type="button" onclick="showRecipe('mayo-baked-salmon-with-soy-dijon-sauce')">Mayo-Baked Salmon with Soy-Dijon Sauce</button>
+<button class="recipe-link" type="button" onclick="showRecipe('air-fried-salmon-and-green-fried-rice')">Air-Fried Salmon &amp; Green Fried Rice</button>
+<button class="recipe-link" type="button" onclick="showRecipe('salmon-avocado-tartare-stack')">Salmon &amp; Avocado Tartare Stack</button>
+<button class="recipe-link" type="button" onclick="showRecipe('quinoa-edamame-salad-with-sesame-ginger-dressing')">Quinoa Edamame Salad with Sesame-Ginger Dressing</button>
+<button class="recipe-link" type="button" onclick="showRecipe('coconut-chickpea-dahl')">Coconut Chickpea Dahl</button>
+<button class="recipe-link" type="button" onclick="showRecipe('nisha-katonas-15-minute-dahl')">Nisha Katona’s 15-Minute Dahl</button>
+<button class="recipe-link" type="button" onclick="showRecipe('mix-saabut-daal-mixed-bean-curry')">Mix Saabut Daal — Mixed Bean Curry</button>
+<button class="recipe-link" type="button" onclick="showRecipe('marry-me-butter-beans')">Marry Me Butter Beans</button></section><section class='recipe' id='crispy-rice-sushi-tuna-salad'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Crispy Rice Sushi Tuna Salad</h2>
+<p><em>Serves 4 · Prep 10 min · Cook 30–40 min</em></p>
+<h3>Ingredients</h3>
+<h4>Crispy rice</h4>
+<ul>
+<li>1½ cups cooked sushi rice or jasmine rice, preferably day-old</li>
+<li>1 tbsp soy sauce</li>
+<li>1 tbsp sesame oil</li>
+<li>1 tsp chilli crisp or chilli oil, optional</li>
+</ul>
+<h4>Salad</h4>
+<ul>
+<li>3 cans tuna, drained</li>
+<li>1 large avocado, diced</li>
+<li>2 cups diced cucumber</li>
+<li>1 medium carrot, shredded</li>
+<li>1 cup finely chopped coriander/cilantro</li>
+<li>⅓ cup sesame seeds</li>
+<li>±10 g dried seaweed, crumbled</li>
+</ul>
+<h4>Dressing</h4>
+<ul>
+<li>¼ cup toasted sesame oil</li>
+<li>¼ cup soy sauce</li>
+<li>3 tbsp rice vinegar</li>
+<li>1 tbsp sriracha</li>
+<li>2 garlic cloves, minced or grated</li>
+<li>1 tbsp honey or maple syrup</li>
+<li>1 tsp mustard</li>
+<li>1 tsp grated ginger</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Preheat oven to <strong>220°C</strong>. Line a tray with baking paper.</li>
+<li>Toss rice with soy sauce, sesame oil, and chilli crisp/oil.</li>
+<li>Bake rice for <strong>30–40 minutes</strong>, tossing halfway, until browned and crispy.</li>
+<li>Whisk all dressing ingredients together until smooth.</li>
+<li>Break up tuna in a large bowl.</li>
+<li>Add avocado, cucumber, carrot, coriander, sesame seeds, seaweed, and crispy rice.</li>
+<li>Pour over dressing, toss, and serve.</li>
+</ol>
+<h3>Tip</h3>
+<p>If your rice is freshly cooked, chill it for at least <strong>1 hour</strong> first so it crisps properly.</p>
+<p><em>Source: Avocado Skillet / Facebook Reel</em></p></section><section class='recipe' id='green-beans-cottage-cheese-pretzel-herb-crunch'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Green Beans with Cottage Cheese and Pretzel-Herb Crunch</h2>
+<p><em>Serves 2–4 as a side · Prep 10 min · Cook 8–10 min</em></p>
+<h3>Ingredients</h3>
+<h4>Green beans</h4>
+<ul>
+<li>300 g green beans, trimmed</li>
+<li>A splash of water</li>
+<li>Sea salt, to taste</li>
+<li>1 knob butter</li>
+<li>Juice and zest of 1 lemon</li>
+<li>Cottage cheese or soft cheese of choice, for serving</li>
+</ul>
+<h4>Pretzel-herb crunch</h4>
+<ul>
+<li>Fresh parsley, chopped</li>
+<li>Fresh mint, chopped</li>
+<li>Fresh dill, chopped</li>
+<li>Honey-and-mustard pretzels, crushed</li>
+<li>Pickles, chopped</li>
+<li>Cracked black pepper, to taste</li>
+</ul>
+<h4>Optional Dijon vinaigrette</h4>
+<ul>
+<li>1 tsp Dijon mustard</li>
+<li>Olive oil</li>
+<li>A squeeze of lemon juice</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Add the green beans to a hot pan with a splash of water, a pinch of salt, and the butter.</li>
+<li>Steam until the beans are tender and the butter has cooked down to coat them.</li>
+<li>Finish with lemon juice and zest.</li>
+<li>Mix the chopped herbs, crushed pretzels, pickles, and black pepper together.</li>
+<li>Spoon cottage cheese onto a plate.</li>
+<li>Top with the warm beans and finish with the pretzel-herb crunch.</li>
+<li>Add a final squeeze of lemon before serving.</li>
+<li>Optional: whisk Dijon mustard, olive oil, and lemon juice into a quick vinaigrette and drizzle over.</li>
+</ol>
+<p><em>Source: Woolworths Facebook Reel — <a href="https://www.facebook.com/share/r/195UeuKNas/?mibextid=wwXIfr" target="_blank" rel="noopener">https://www.facebook.com/share/r/195UeuKNas/?mibextid=wwXIfr</a></em></p></section><section class='recipe' id='creamy-mushroom-bacon-tagliatelle-alfredo'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Creamy Mushroom &amp; Bacon Tagliatelle Alfredo</h2>
+<p><em>Serves 2 · Prep 10 min · Cook 15 min</em></p>
+<h3>Ingredients</h3>
+<ul>
+<li>200 grams Tagliatelle (or fettuccini)</li>
+<li>50 grams of salted butter</li>
+<li>90 grams of streaky bacon</li>
+<li>200 grams of small brown button mushrooms (sliced)</li>
+<li>2 tsp fresh thyme leaves (stripped from stalk)</li>
+<li>250 ml 1 cup cream</li>
+<li>50 grams of Parmesan (finely grated plus more for serving)</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Cook the pasta in a large pot of salted water until al dente. Make sure to reserve at least half a cup of pasta cooking water at the end of the cooking time.</li>
+<li>Place a small piece of the butter in a large nonstick pan and fry the bacon until crisp. Remove and set aside.</li>
+<li>Add another piece of the butter to the pan, then add the mushrooms and cook for a few minutes until starting to caramelize.</li>
+<li>Add the rest of the butter to the pan and allow it to melt and bubble slightly. Then add the cream and allow it to heat through.</li>
+<li>Add the grated Parmesan and stir to combine.</li>
+<li>Season with salt and pepper, and add the crispy bacon back to the pan.</li>
+<li>When the pasta is cooked to al dente, add it to the pan along with at least ¼ cup of the pasta water.  Vigorously shake the pan and toss the pasta through with tongs to coat. You want to emulsify the butter and cream with the liquid. This should form a nice sauce.</li>
+<li>Season well with salt and pepper again as necessary and toss to combine.</li>
+<li>Serve immediately with more Parmesan cheese.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Best served straight after making; the sauce can split when reheated.</li>
+<li>Save extra pasta water to loosen and emulsify the sauce if needed.</li>
+</ul>
+<p><em>Source: Drizzle &amp; Dip — <a href="https://drizzleanddip.com/2025/03/27/creamy-mushroom-bacon-tagliatelle-alfredo-recipe/" target="_blank" rel="noopener">https://drizzleanddip.com/2025/03/27/creamy-mushroom-bacon-tagliatelle-alfredo-recipe/</a></em></p></section><section class='recipe' id='weeknight-cream-of-mushroom-chicken-skillet'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Weeknight Cream of Mushroom Chicken Skillet</h2>
+<p><em>Serves 6 · Prep 5 min · Cook 20 min</em></p>
+<h3>Ingredients</h3>
+<ul>
+<li>2 lbs / ±900 g boneless skinless chicken breasts</li>
+<li>1½ tsp salt</li>
+<li>1 tsp chilli powder</li>
+<li>Fresh cracked black pepper</li>
+<li>1 tbsp olive oil</li>
+<li>8 oz / ±225 g mushrooms, sliced</li>
+<li>3 garlic cloves, minced</li>
+<li>1 can reduced-sodium cream of mushroom soup, 10.5 oz / ±300 g</li>
+<li>1 cup water</li>
+</ul>
+<h4>Optional thickener</h4>
+<ul>
+<li>½ tbsp cornstarch or arrowroot powder</li>
+<li>½–1 tbsp water, to mix</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Slice the chicken breasts in half to butterfly them, then pound to about <strong>½ inch / 1.25 cm</strong> thick.</li>
+<li>Season both sides with half the salt, chilli powder, and black pepper.</li>
+<li>Heat olive oil in a large skillet over medium heat.</li>
+<li>Cook chicken for <strong>4–5 minutes per side</strong>, then transfer to a plate.</li>
+<li>Add mushrooms and garlic to the same pan. Cook for a few minutes until browned.</li>
+<li>Add cream of mushroom soup and <strong>1 cup water</strong>. Whisk until smooth and bring to a boil.</li>
+<li>Return chicken to the pan and simmer for <strong>5 minutes</strong>, until cooked through.</li>
+<li>Optional: remove chicken, whisk in the cornstarch-water slurry, and simmer for <strong>1 minute</strong> to thicken.</li>
+<li>Return chicken to the sauce, coat well, and serve.</li>
+</ol>
+<h3>Serving ideas</h3>
+<p>Good over rice, noodles, mashed potatoes, cauliflower rice, green beans, broccoli, carrots, or roasted veg.</p>
+<h3>Notes</h3>
+<ul>
+<li>Internal chicken temperature should reach <strong>74°C / 165°F</strong>.</li>
+<li>Store sauce separately from rice/pasta/veg so it doesn’t go soggy.</li>
+<li>Loosen leftovers with a little milk or chicken broth.</li>
+</ul>
+<p><em>Source: Oh Snap Macros — <a href="https://ohsnapmacros.com/cream-of-mushroom-chicken/" target="_blank" rel="noopener">https://ohsnapmacros.com/cream-of-mushroom-chicken/</a></em></p></section><section class='recipe' id='tortang-talong-filipino-eggplant-omelette'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Tortang Talong — Filipino Eggplant Omelette</h2>
+<p><em>Serves 1 · Prep 5 min · Cook 25–45 min, depending on roasting method</em></p>
+<p>A simple Filipino eggplant omelette: roasted brinjal/aubergine flattened, dipped in beaten egg, then pan-fried until golden.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>1 large brinjal/aubergine/eggplant</li>
+<li>1 egg, beaten</li>
+<li>Salt, to taste</li>
+<li>Black pepper, to taste</li>
+<li>Olive oil or neutral cooking oil, for frying</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Prick the brinjal/aubergine with the tip of a knife before roasting, so it does not burst in the oven.</li>
+<li>Roast at <strong>200°C</strong> until the flesh is very soft, about <strong>25–40 minutes</strong> depending on size. If you have a gas flame, you can char it directly over the flame instead until soft.</li>
+<li>Let it cool just enough to handle, then peel off the skin, keeping the stem attached if possible.</li>
+<li>Flatten the roasted brinjal gently with a fork, making a wide omelette shape.</li>
+<li>Season the beaten egg with salt and pepper.</li>
+<li>Dip the flattened brinjal into the egg, coating both sides.</li>
+<li>Heat a little oil in a frying pan over medium heat.</li>
+<li>Fry the egg-coated brinjal until golden on one side, then flip carefully and cook the other side.</li>
+<li>Serve hot, as is, or with rice and a dipping sauce.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>The Facebook caption says this is a traditional Filipino dish and stresses: <strong>prick the brinjal before baking</strong> to avoid oven drama.</li>
+<li>If the oven is already on, roast extra brinjals, peppers, onions, or other vegetables at the same time.</li>
+<li>This is the simple version: <strong>one brinjal + one egg</strong> per person.</li>
+</ul>
+<p><em>Source: Facebook reel by beagaraizabal — <a href="https://www.facebook.com/share/v/17ny7qqkU9/" target="_blank" rel="noopener">https://www.facebook.com/share/v/17ny7qqkU9/</a></em></p></section><section class='recipe' id='creamy-roasted-eggplant-and-tomato-pasta'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Creamy Roasted Eggplant and Tomato Pasta</h2>
+<p><em>Serves 3 · Prep 5 min · Cook 30 min</em></p>
+<p>Whole eggplant, tomatoes, and garlic are cooked down in one pan until soft, then mashed into a smoky, creamy vegan sauce with oat cream, chili crisp, and vegan parmesan. Toss with linguine or spaghetti.</p>
+<h3>Ingredients</h3>
+<h4>Sauce</h4>
+<ul>
+<li>2 medium eggplants/brinjals, halved lengthwise</li>
+<li>3 large tomatoes, tops cut off</li>
+<li>6–8 garlic cloves, peeled</li>
+<li>3 tbsp olive oil</li>
+<li>1 tsp salt, plus a pinch for the eggplant cut surfaces</li>
+<li>½ tsp black pepper</li>
+<li>1 tsp smoked paprika</li>
+<li>½ tsp red pepper flakes</li>
+<li>2 tbsp chili crisp</li>
+<li>2 tbsp vegan parmesan</li>
+<li>1 cup oat cream, or any vegan cream</li>
+</ul>
+<h4>Pasta</h4>
+<ul>
+<li>10.5 oz / about 300 g linguine or spaghetti</li>
+<li>Reserved pasta water, as needed</li>
+</ul>
+<h4>To serve</h4>
+<ul>
+<li>Extra vegan parmesan</li>
+<li>Fresh parsley, chopped</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Heat the olive oil in a large deep pan over medium heat.</li>
+<li>Place the halved eggplants cut-side down and sprinkle the cut surfaces with a pinch of salt.</li>
+<li>Add the tomatoes and garlic cloves to the pan.</li>
+<li>Cover with a lid and cook for <strong>20–25 minutes</strong>, until everything is completely soft and collapsing. Flip the eggplant halfway through if needed.</li>
+<li>Use tongs to peel away and discard the tomato skins and eggplant skins.</li>
+<li>Mash everything together directly in the pan with a potato masher or fork until you have a thick, chunky sauce.</li>
+<li>Add salt, pepper, smoked paprika, red pepper flakes, chili crisp, and vegan parmesan. Stir and simmer for a couple of minutes.</li>
+<li>Pour in the oat cream and stir until creamy. Let it bubble gently for <strong>2–3 minutes</strong>.</li>
+<li>Meanwhile, cook the linguine or spaghetti in salted boiling water until al dente. Reserve some pasta water before draining.</li>
+<li>Add the pasta directly into the sauce and toss to coat. Loosen with a splash of pasta water if needed.</li>
+<li>Serve with extra vegan parmesan and chopped fresh parsley.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Keeping the lid on is essential; the steam softens the eggplant and tomatoes without extra liquid.</li>
+<li>Salting the eggplant cut surfaces draws out moisture and helps speed up cooking.</li>
+<li>Penne, rigatoni, or fusilli will also work.</li>
+<li>If you do not have chili crisp, use red pepper flakes and a small drizzle of sesame oil.</li>
+<li>Oven option: place everything cut-side down on a parchment-lined tray and roast at <strong>200°C / 400°F</strong> for <strong>30–35 minutes</strong>, then peel, mash, and finish on the stovetop.</li>
+</ul>
+<h3>Nutrition per serving</h3>
+<ul>
+<li>Calories: 681 kcal</li>
+<li>Carbohydrates: 95 g</li>
+<li>Protein: 19 g</li>
+<li>Fat: 26 g</li>
+<li>Fibre: 13 g</li>
+<li>Sugar: 14 g</li>
+</ul>
+<p><em>Source: Dr. Vegan — <a href="https://drveganblog.com/creamy-roasted-eggplant-and-tomato-pasta/" target="_blank" rel="noopener">https://drveganblog.com/creamy-roasted-eggplant-and-tomato-pasta/</a></em></p></section><section class='recipe' id='marry-me-chicken-and-rice-dump-bake'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Marry Me Chicken and Rice {Dump &amp; Bake}</h2>
+<p><em>Serves 4 · Prep 10 min · Cook 40–50 min</em></p>
+<p>A one-pan creamy chicken and rice bake with sun-dried tomatoes, parmesan, basil, and the familiar “Marry Me Chicken” flavour profile.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>4 chicken breasts, cubed</li>
+<li>150 g sun-dried tomatoes, drained and roughly chopped</li>
+<li>1 tbsp tomato purée / tomato paste</li>
+<li>1 tsp dried oregano</li>
+<li>1 tbsp paprika</li>
+<li>300 g basmati rice, rinsed and drained</li>
+<li>600 ml hot chicken stock, from a stock cube or bouillon</li>
+<li>100 ml double cream / heavy cream / thickened cream</li>
+<li>50 g parmesan, grated</li>
+<li>Sea salt and freshly ground black pepper, to taste</li>
+</ul>
+<h4>To garnish</h4>
+<ul>
+<li>1 small bunch fresh basil</li>
+<li>Optional: squeeze of lemon, to serve</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Preheat the oven to <strong>180°C fan / 200°C / 350°F / Gas 6</strong>.</li>
+<li>Add the chicken, sun-dried tomatoes, tomato purée, oregano, paprika, rinsed rice, and hot chicken stock to a baking dish.</li>
+<li>Season generously with salt and pepper, then stir everything together.</li>
+<li>Cover tightly with foil and bake for <strong>30 minutes</strong>.</li>
+<li>Remove from the oven, stir well, and check the rice. Add a splash more hot stock if it looks dry.</li>
+<li>Cover again and bake for another <strong>10–20 minutes</strong>, until the rice is tender and the chicken is cooked through.</li>
+<li>Stir in the double cream and grated parmesan.</li>
+<li>Scatter over fresh basil and add a squeeze of lemon if you like.</li>
+<li>Serve hot.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Ceramic baking dishes may take longer than metal trays.</li>
+<li>Keep an eye on the rice; add extra hot stock if it dries out before it is cooked.</li>
+<li>Leftovers keep in the fridge for up to <strong>3 days</strong>. Cool rice quickly and reheat until piping hot.</li>
+<li>Can be frozen for up to <strong>3 months</strong>; defrost thoroughly and add a splash of water when reheating.</li>
+</ul>
+<p><em>Source: Taming Twins — <a href="https://www.tamingtwins.com/marry-me-chicken-and-rice/" target="_blank" rel="noopener">https://www.tamingtwins.com/marry-me-chicken-and-rice/</a></em></p></section><section class='recipe' id='cottage-cheese-scrambled-eggs-with-spinach-and-tomatoes'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Cottage Cheese Scrambled Eggs with Spinach and Tomatoes</h2>
+<p><em>Serves 1 · Prep 5 min · Cook 5–7 min</em></p>
+<p>A simple high-protein breakfast from the Facebook reel: scrambled eggs with cottage cheese, green onion, and spinach, served with lightly warmed tomatoes.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>3 eggs</li>
+<li>2–4 tbsp cottage cheese, to taste</li>
+<li>1 green onion / spring onion, sliced</li>
+<li>A handful of fresh spinach, roughly chopped</li>
+<li>Fresh tomatoes, halved or chopped</li>
+<li>Cooking spray or a little butter/oil</li>
+<li>Salt and black pepper, to taste</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Crack the eggs into a bowl and whisk with a pinch of salt and pepper.</li>
+<li>Stir in the cottage cheese, sliced green onion, and spinach.</li>
+<li>Heat a non-stick pan over medium-low heat and spray lightly with cooking spray, or add a little butter/oil.</li>
+<li>Add the egg mixture and cook gently, stirring often, until softly scrambled and just set.</li>
+<li>In the same pan, or alongside the eggs, warm the tomatoes briefly until just softened.</li>
+<li>Serve the scrambled eggs with the warm tomatoes.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>The public caption says: “My daily breakfast… Three eggs scrambled with cottage cheese, green onion and fresh spinach. Served with fresh tomatoes slightly warmed in a skillet.”</li>
+<li>For creamier eggs, keep the heat low and take them off the stove while still slightly glossy.</li>
+<li>Add chilli flakes, herbs, or toast if you want a bigger breakfast.</li>
+</ul>
+<p><em>Source: Facebook reel by Randy &amp; Mandy — <a href="https://www.facebook.com/share/v/1SUGSyC3pp/" target="_blank" rel="noopener">https://www.facebook.com/share/v/1SUGSyC3pp/</a></em></p></section><section class='recipe' id='mayo-baked-salmon-with-soy-dijon-sauce'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Mayo-Baked Salmon with Soy-Dijon Sauce</h2>
+<p><em>Serves 2–4 · Prep 5 min · Cook 12–15 min</em></p>
+<p>A quick baked salmon from Thatdudecancook: mayo keeps the fish moist, while lemon, soy and Dijon make the sauce savoury and bright.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>1 salmon fillet or 2–4 salmon portions</li>
+<li>Salt and black pepper, to taste</li>
+<li>¼ cup mayonnaise</li>
+<li>Juice of ½ lemon</li>
+<li>1 tbsp soy sauce</li>
+<li>1 tsp Dijon mustard</li>
+<li>1 garlic clove, minced or grated</li>
+<li>Fresh dill, chopped, optional</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Heat the oven to <strong>175°C / 350°F</strong>. Line a tray with baking paper or foil.</li>
+<li>Pat the salmon dry and season lightly with salt and black pepper.</li>
+<li>Mix the mayonnaise, lemon juice, soy sauce, Dijon, garlic, and dill if using.</li>
+<li>Spread the sauce evenly over the salmon.</li>
+<li>Bake for <strong>12–15 minutes</strong>, depending on thickness, until the salmon flakes easily.</li>
+<li>Optional: grill/broil for the last <strong>1–2 minutes</strong> for a little colour on top.</li>
+<li>Serve with rice, greens, potatoes, or a simple salad.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Public snippets for the reel list the sauce as: about ¼ cup mayo, juice of ½ lemon, about 1 tbsp soy sauce, Dijon, garlic, and optional dill.</li>
+<li>Go lightly on extra salt because soy sauce brings saltiness.</li>
+</ul>
+<p><em>Source: Facebook reel by Thatdudecancook — <a href="https://www.facebook.com/reel/1680581866598701/" target="_blank" rel="noopener">https://www.facebook.com/reel/1680581866598701/</a></em></p></section><section class='recipe' id='air-fried-salmon-and-green-fried-rice'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Air-Fried Salmon &amp; Green Fried Rice</h2>
+<p><em>Serves 2 · Prep 10 min · Cook 20 min</em></p>
+<p>Honey-tamari salmon bites with veggie-packed green fried rice, finished with lime, sesame and optional chilli crunch.</p>
+<h3>Ingredients</h3>
+<h4>Salmon</h4>
+<ul>
+<li>280 g / 10 oz salmon</li>
+<li>2 tbsp tamari or soy sauce</li>
+<li>1 tbsp honey</li>
+<li>2 tsp rice wine vinegar</li>
+<li>Black pepper, to taste</li>
+</ul>
+<h4>Green fried rice</h4>
+<ul>
+<li>1 tbsp extra virgin olive oil, or oil of choice</li>
+<li>3 garlic cloves, minced</li>
+<li>2 spring onions, finely chopped, green tops reserved</li>
+<li>1 zucchini, diced</li>
+<li>½ head broccoli, florets finely chopped</li>
+<li>¾ cup edamame beans, frozen is fine</li>
+<li>2 cups / 300 g cooked brown rice</li>
+<li>2 tsp tamari or soy sauce</li>
+<li>2 tsp sesame oil</li>
+<li>Sea salt, to taste</li>
+</ul>
+<h4>To serve</h4>
+<ul>
+<li>2 tsp sesame seeds</li>
+<li>Juice of ½ lime</li>
+<li>2 tsp chilli crunch, optional</li>
+<li>Reserved spring onion greens</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Slice the salmon into cubes and place in a small bowl.</li>
+<li>Whisk together the tamari, honey, and rice wine vinegar. Add black pepper.</li>
+<li>Pour over the salmon and marinate for at least <strong>10 minutes</strong>, turning halfway through.</li>
+<li>Heat the olive oil in a large frying pan or wok over medium-high heat.</li>
+<li>Add the garlic and white parts of the spring onions. Sauté for <strong>2–3 minutes</strong>.</li>
+<li>Add zucchini and broccoli, season with sea salt, and sauté for <strong>3–4 minutes</strong>.</li>
+<li>Add edamame and cooked brown rice. Stir to combine.</li>
+<li>Add tamari and cook for <strong>1–2 minutes</strong>, until the rice is heated through.</li>
+<li>Remove from the heat and stir through sesame oil.</li>
+<li>Place the salmon pieces in the air-fryer basket and air-fry at <strong>200°C / 390°F for 5 minutes</strong>.</li>
+<li>Divide the green fried rice between two plates. Top with salmon bites.</li>
+<li>Finish with sesame seeds, reserved spring onion greens, lime juice, and chilli crunch if using.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Leftovers keep in an airtight container in the fridge for up to <strong>2 days</strong>. Reheat before serving.</li>
+<li>Frozen veg works well here — fried rice is kindly unfussy like that.</li>
+</ul>
+<p><em>Source: Facebook reel by JSHealth — <a href="https://www.facebook.com/reel/1861993911041704/" target="_blank" rel="noopener">https://www.facebook.com/reel/1861993911041704/</a></em></p></section><section class='recipe' id='salmon-avocado-tartare-stack'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Salmon &amp; Avocado Tartare Stack</h2>
+<p><em>Serves 2–4 as a starter · Prep 20 min · No cook</em></p>
+<p>A layered no-cook starter with sushi-grade salmon, lemony avocado, herbs, and microgreens.</p>
+<h3>Ingredients</h3>
+<h4>Avocado base</h4>
+<ul>
+<li>2 ripe avocados, diced</li>
+<li>A squeeze of lemon or lime juice</li>
+<li>2 tbsp fresh dill, chopped</li>
+<li>Chives, finely chopped, to taste</li>
+<li>Salt and black pepper, to taste</li>
+</ul>
+<h4>Salmon layer</h4>
+<ul>
+<li>400 g sushi-grade salmon fillet, finely diced</li>
+<li>1 lime or lemon, using juice/zest to taste</li>
+<li>1–2 tbsp olive oil</li>
+<li>1 small shallot, finely chopped</li>
+<li>Salt, to taste</li>
+</ul>
+<h4>Optional creamy avocado topping</h4>
+<ul>
+<li>½ avocado</li>
+<li>1 tbsp Greek yoghurt</li>
+<li>A squeeze of lemon or lime juice</li>
+</ul>
+<h4>Garnish</h4>
+<ul>
+<li>Microgreens</li>
+<li>Cracked black pepper</li>
+<li>Chive blossoms, optional</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>In a bowl, gently mix the diced avocado with lemon/lime juice, dill, chives, salt, and pepper. Keep some texture rather than mashing it smooth.</li>
+<li>Finely dice the sushi-grade salmon.</li>
+<li>Mix the salmon with olive oil, lemon/lime juice and zest, chopped shallot, and a pinch of salt.</li>
+<li>Chill the salmon mixture for about <strong>10 minutes</strong> while you prepare the topping.</li>
+<li>Optional: mash ½ avocado with Greek yoghurt and lemon/lime juice until smooth.</li>
+<li>Set a round ring mould on a plate. Add the avocado base first and press gently.</li>
+<li>Add the salmon layer and press lightly so it holds its shape.</li>
+<li>Add the optional creamy avocado topping, then lift off the ring mould carefully.</li>
+<li>Garnish with microgreens, cracked black pepper, and chive blossoms if using.</li>
+<li>Serve immediately.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Use only sushi-grade/sashimi-grade salmon for raw preparations, keep it cold, and eat the same day.</li>
+<li>If you cannot get sushi-grade salmon, use cold-smoked salmon or cooked shrimp instead.</li>
+<li>The source page notes that the salmon mix can be prepped up to <strong>3 hours ahead</strong>, but the stack should be assembled just before serving.</li>
+<li>A 5-inch ring mould works well.</li>
+</ul>
+<p><em>Source: Kateryna’s Cafe — <a href="https://katerynascafe.com/salmon-avocado-tartar-stack/" target="_blank" rel="noopener">https://katerynascafe.com/salmon-avocado-tartar-stack/</a></em></p></section><section class='recipe' id='quinoa-edamame-salad-with-sesame-ginger-dressing'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Quinoa Edamame Salad with Sesame-Ginger Dressing</h2>
+<p><em>Serves 4 · Prep 15 min · Cook 15 min</em></p>
+<p>A protein-rich quinoa salad with edamame, crunchy vegetables, herbs, and a sesame-ginger dressing.</p>
+<h3>Ingredients</h3>
+<h4>Salad</h4>
+<ul>
+<li>1 cup quinoa, rinsed</li>
+<li>2 cups water or vegetable broth</li>
+<li>1 cup shelled edamame, cooked</li>
+<li>1 red bell pepper, diced</li>
+<li>1 cup shredded carrots</li>
+<li>3 green onions, sliced</li>
+<li>½ cup fresh coriander/cilantro, chopped, optional</li>
+<li>Sesame seeds, for serving</li>
+</ul>
+<h4>Sesame-ginger dressing</h4>
+<ul>
+<li>3 tbsp soy sauce or tamari</li>
+<li>2 tbsp rice vinegar</li>
+<li>1 tbsp lime juice</li>
+<li>1 tbsp honey or maple syrup</li>
+<li>1 tbsp toasted sesame oil</li>
+<li>1 tbsp olive oil or neutral oil</li>
+<li>1–2 tsp fresh ginger, grated</li>
+<li>1 garlic clove, grated or minced</li>
+<li>Salt and black pepper, to taste</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Combine quinoa and water or vegetable broth in a saucepan. Bring to a boil, then reduce to a simmer, cover, and cook for <strong>12–15 minutes</strong>, until the liquid is absorbed.</li>
+<li>Let the quinoa stand, covered, for <strong>5 minutes</strong>, then fluff with a fork and cool slightly.</li>
+<li>Cook the edamame according to packet instructions, then drain and cool.</li>
+<li>Whisk together all dressing ingredients. Taste and adjust with extra lime, soy/tamari, or honey/maple syrup.</li>
+<li>In a large bowl, combine quinoa, edamame, red pepper, carrots, green onions, and coriander if using.</li>
+<li>Pour over the dressing and toss well.</li>
+<li>Finish with sesame seeds and serve chilled or at room temperature.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Good for meal prep: keep for <strong>3–4 days</strong> in the fridge.</li>
+<li>Add cucumber, red cabbage, or roasted cashews if you want more crunch.</li>
+</ul>
+<p><em>Source: Facebook photo post — <a href="https://www.facebook.com/photo.php?fbid=122317435790221144&amp;set=a.122096548592221144&amp;type=3" target="_blank" rel="noopener">https://www.facebook.com/photo.php?fbid=122317435790221144&amp;set=a.122096548592221144&amp;type=3</a></em></p></section><section class='recipe' id='coconut-chickpea-dahl'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Coconut Chickpea Dahl</h2>
+<p><em>Serves 5 · Prep 5 min · Cook 35 min</em></p>
+<p>A nourishing coconut dahl with red lentils, chickpeas, warming spices, and optional crunchy turmeric chickpeas.</p>
+<h3>Ingredients</h3>
+<h4>Dahl base</h4>
+<ul>
+<li>400 g dried red lentils / 2 cups</li>
+<li>1 large onion, finely chopped</li>
+<li>3 garlic cloves, finely chopped or grated</li>
+<li>1 thumb-sized piece fresh ginger, finely chopped or grated</li>
+<li>1 tbsp coconut oil</li>
+<li>1½ tsp sea salt</li>
+<li>½ tsp black pepper</li>
+<li>2 tsp ground cumin</li>
+<li>2 tsp ground turmeric</li>
+<li>1 tsp ground coriander</li>
+<li>1 tsp paprika</li>
+<li>Pinch of chilli flakes</li>
+<li>400 ml coconut milk / 14 oz</li>
+<li>750 ml vegetable stock / 3 cups</li>
+<li>2 x 400 g tins chickpeas / 2 x 14 oz, drained</li>
+<li>Small bunch fresh coriander/cilantro, chopped</li>
+</ul>
+<h4>Crunchy turmeric chickpeas</h4>
+<ul>
+<li>400 g tin chickpeas / 14 oz, drained</li>
+<li>2 tsp olive oil or coconut oil</li>
+<li>1 tsp turmeric</li>
+<li>½ tsp garlic powder</li>
+<li>Salt and black pepper</li>
+</ul>
+<h4>To serve</h4>
+<ul>
+<li>Fresh coriander/cilantro</li>
+<li>Natural yoghurt or plant-based yoghurt, optional</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Add the lentils to a large bowl and cover with cold water while you prep the aromatics.</li>
+<li>Heat coconut oil in a large pan. Add the onion and sauté for <strong>7–8 minutes</strong>.</li>
+<li>Add the ginger and garlic for the last <strong>2 minutes</strong>.</li>
+<li>Add salt, pepper, cumin, turmeric, coriander, paprika, and chilli flakes. Stir for <strong>1 minute</strong>.</li>
+<li>Drain the lentils and add them to the pan, stirring to coat in the spices.</li>
+<li>Pour in the stock and coconut milk. Stir well and bring to a boil.</li>
+<li>Reduce the heat and simmer for <strong>15 minutes</strong>, stirring occasionally.</li>
+<li>Drain the 2 tins of chickpeas and add them to the pan. Cook for another <strong>10 minutes</strong>, stirring occasionally, until the lentils are soft.</li>
+<li>For the crunchy topping, heat the oven to <strong>180°C / 350°F</strong>. Toss chickpeas with oil, turmeric, garlic powder, salt, and pepper, then bake for about <strong>15 minutes</strong>.</li>
+<li>Serve the dahl topped with crunchy chickpeas, fresh coriander, and yoghurt if using.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Add extra stock for a looser dahl; it thickens as it cools.</li>
+<li>Stir through spinach, kale, or peas at the end for extra greens.</li>
+<li>Keeps well and tastes even better the next day.</li>
+</ul>
+<p><em>Source: Helen Ridgeway Nutrition — <a href="https://helenridgeway.com/recipes/coconut-chickpea-dahl/" target="_blank" rel="noopener">https://helenridgeway.com/recipes/coconut-chickpea-dahl/</a></em></p></section><section class='recipe' id='nisha-katonas-15-minute-dahl'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Nisha Katona’s 15-Minute Dahl</h2>
+<p><em>Serves 4–6 · Prep 5 min · Cook 15–20 min</em></p>
+<p>A fast one-pan red lentil dahl with turmeric, cumin, tomato, lemon, and yoghurt stirred through at the end.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>2 cups red lentils, rinsed</li>
+<li>6 cups water</li>
+<li>½ tin chopped tomatoes</li>
+<li>1 tsp ground turmeric</li>
+<li>1 tsp salt, plus more to taste</li>
+<li>1 tsp ground cumin or cumin seeds</li>
+<li>¼ tsp chilli powder, optional</li>
+<li>1 tsp sugar, optional</li>
+<li>Juice of ½ lemon, plus extra to taste</li>
+<li>Black pepper, to taste</li>
+<li>2–3 tbsp yoghurt, optional</li>
+<li>Fresh coriander/cilantro, chopped, optional</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Rinse the red lentils well.</li>
+<li>Add lentils, water, chopped tomatoes, turmeric, salt, cumin, and chilli powder if using to a large pan.</li>
+<li>Bring to a boil, then simmer for <strong>15–20 minutes</strong>, stirring occasionally, until the lentils soften and collapse.</li>
+<li>Add a splash more water if it gets too thick before the lentils are tender.</li>
+<li>Stir in sugar if using, lemon juice, black pepper, and yoghurt if using.</li>
+<li>Taste and adjust salt and lemon.</li>
+<li>Finish with chopped coriander and serve with rice, naan, or toast.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>The public reel snippets describe the ratio as <strong>2 cups lentils to 6 cups water</strong>, with half a tin of chopped tomatoes, turmeric, salt, lemon, and yoghurt.</li>
+<li>If using cumin seeds, briefly bloom them in oil first for better flavour, then add the lentils and liquid.</li>
+</ul>
+<p><em>Source: Facebook video by Nisha Katona — <a href="https://www.facebook.com/nisha.katona.9/videos/1371515337780113/" target="_blank" rel="noopener">https://www.facebook.com/nisha.katona.9/videos/1371515337780113/</a></em></p></section><section class='recipe' id='mix-saabut-daal-mixed-bean-curry'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Mix Saabut Daal — Mixed Bean Curry</h2>
+<p><em>Serves 4–6 · Prep 10 min · Cook 30–40 min</em></p>
+<p>A budget-friendly Pakistani-style mixed bean curry from Sobia’s Spice, made with tinned beans, onion, tomato, ginger-garlic, and a tarka-style spice finish.</p>
+<h3>Ingredients</h3>
+<h4>Bean curry</h4>
+<ul>
+<li>1 tbsp butter</li>
+<li>1 tbsp olive oil</li>
+<li>2 medium onions, diced</li>
+<li>1½ tbsp ginger-garlic paste</li>
+<li>4 tins mixed beans, drained — about 800–900 g drained weight total</li>
+<li>1 fresh tomato, blended</li>
+<li>50 ml passata</li>
+<li>½–1 cup water, as needed</li>
+<li>Salt, to taste</li>
+</ul>
+<h4>Spice/tarka finish</h4>
+<ul>
+<li>1 onion, sliced</li>
+<li>4 garlic cloves, sliced</li>
+<li>1 tsp cumin seeds</li>
+<li>10–12 curry leaves, optional</li>
+<li>½ tsp garam masala</li>
+<li>Red chilli flakes or fresh chilli, to taste</li>
+<li>Fresh coriander/cilantro, chopped, optional</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Heat butter and olive oil in a large pan.</li>
+<li>Add the diced onions and cook until softened and lightly golden.</li>
+<li>Stir in the ginger-garlic paste and cook for <strong>1–2 minutes</strong>.</li>
+<li>Add the drained beans, blended tomato, passata, salt, and enough water to loosen.</li>
+<li>Simmer for <strong>20–30 minutes</strong>, stirring occasionally, until thick and glossy. Add more water if it catches.</li>
+<li>For the tarka, fry the sliced onion until golden, then add sliced garlic, cumin seeds, curry leaves if using, and chilli.</li>
+<li>Stir the tarka through the beans.</li>
+<li>Finish with garam masala and fresh coriander.</li>
+<li>Serve with rice, roti, naan, or yoghurt on the side.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Use any combination of tinned beans: kidney beans, black beans, chickpeas, cannellini, haricot, borlotti, or butter beans.</li>
+<li>Public snippets list the core ingredients as <strong>2 diced onions, 4 tins beans, 1½ tbsp ginger-garlic paste, blended fresh tomato, and 50 ml passata</strong>.</li>
+</ul>
+<p><em>Source: Sobia’s Spice Facebook/YouTube video — <a href="https://www.facebook.com/reel/1395615449259681/" target="_blank" rel="noopener">https://www.facebook.com/reel/1395615449259681/</a> and <a href="https://www.youtube.com/watch?v=7Pk2r1tSDoQ" target="_blank" rel="noopener">https://www.youtube.com/watch?v=7Pk2r1tSDoQ</a></em></p></section><section class='recipe' id='marry-me-butter-beans'><button class='back' type='button' onclick='showIndex()'>← Back to recipe list</button>
+<h2>Marry Me Butter Beans</h2>
+<p><em>Serves 4 · Prep 5 min · Cook 25 min</em></p>
+<p>Creamy sun-dried tomato butter beans in a cheesy, Tuscan-style sauce — a one-pot dinner made for crusty bread.</p>
+<h3>Ingredients</h3>
+<ul>
+<li>1 tbsp oil from the sun-dried tomato jar</li>
+<li>2 shallots, diced</li>
+<li>2 garlic cloves, minced</li>
+<li>5–6 sun-dried tomatoes, finely diced</li>
+<li>2 tbsp tomato paste / tomato purée</li>
+<li>1 tsp garlic powder</li>
+<li>1 tsp onion powder</li>
+<li>2 tsp smoked paprika</li>
+<li>2 tsp dried oregano</li>
+<li>1 tsp cayenne chilli pepper</li>
+<li>Salt and black pepper, to taste</li>
+<li>300 ml vegetable stock</li>
+<li>2 x 400 g tins butter beans, drained</li>
+<li>1 cup spinach, chopped</li>
+<li>150 ml heavy cream / double cream</li>
+<li>30 g hard cheese, grated — pecorino or vegetarian hard cheese; Parmesan if not vegetarian</li>
+<li>1 handful fresh basil, shredded</li>
+<li>Crusty bread, to serve</li>
+</ul>
+<h3>Preparation</h3>
+<ol>
+<li>Heat the sun-dried tomato oil in a pan over medium heat.</li>
+<li>Add the diced shallots and sauté for <strong>7–8 minutes</strong>, until softened.</li>
+<li>Add the garlic and cook for <strong>1 minute</strong>.</li>
+<li>Stir in the sun-dried tomatoes and tomato paste.</li>
+<li>Add garlic powder, onion powder, smoked paprika, oregano, cayenne, salt, and pepper.</li>
+<li>Pour in the vegetable stock and add the drained butter beans. Simmer on low for <strong>5–10 minutes</strong>, until the sauce thickens.</li>
+<li>Add the chopped spinach and stir until wilted.</li>
+<li>Swirl in the cream, grate in the cheese, season to taste, and scatter over the basil.</li>
+<li>Serve with crusty bread to mop up the sauce.</li>
+</ol>
+<h3>Notes</h3>
+<ul>
+<li>Store leftovers in an airtight container in the fridge for <strong>3–4 days</strong>.</li>
+<li>If you cannot find butter beans, use cannellini beans, haricot/navy beans, or chickpeas.</li>
+<li>The source notes pecorino as the hard cheese; use vegetarian hard cheese if needed.</li>
+</ul>
+<p><em>Source: By The Forkful — <a href="https://www.bytheforkful.com/marry-me-butter-beans/" target="_blank" rel="noopener">https://www.bytheforkful.com/marry-me-butter-beans/</a></em></p></section></div></main><script>function showRecipe(id){document.querySelector('.index').classList.add('hidden');document.querySelectorAll('.recipe').forEach(el=>el.classList.remove('active'));document.getElementById(id).classList.add('active');window.scrollTo(0,0);}function showIndex(){document.querySelector('.index').classList.remove('hidden');document.querySelectorAll('.recipe').forEach(el=>el.classList.remove('active'));window.scrollTo(0,0);}</script></body></html>
